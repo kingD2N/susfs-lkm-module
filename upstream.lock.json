@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/inforcqb/susfs4ksu-lkm",
-  "tag": "v2.3.0-r18.3",
-  "commit": "899976e9891fd91787df641c2ab0ba42c80d0ee7",
+  "tag": "v2.3.0-r18.4",
+  "commit": "8b65f13f3eff4e9d530c92a92dde6133b0700ae7",
   "architecture": "arm64",
   "supported_kmis": [
     "android12-5.10",
@@ -14,15 +14,15 @@
     "android17-6.18"
   ],
   "assets": {
-    "susfs_guard_lkm-android12-5.10.ko": "6111db98333c344af83b12269f5347528afd29108c709250a18ecd8a5d015420",
-    "susfs_guard_lkm-android13-5.10.ko": "2ad5a4fdd4c064b359789e6794ef27d997a14de2ac869d373b84ee624db08fc4",
-    "susfs_guard_lkm-android13-5.15.ko": "a2c1651dd81d945097801b0aea33d7433d9fccae2e2c2c30d304765c112f21cf",
-    "susfs_guard_lkm-android14-5.15.ko": "f60d79ba256aa75ac36fb4351a5c8ad3256753e7116a45749fa2a097ea340adb",
-    "susfs_guard_lkm-android14-6.1.ko": "2bceb365a871d10352fce030c97ef303571ead5c60cf7576aa86596783c9112d",
-    "susfs_guard_lkm-android15-6.6.ko": "efcfbc4b6f65ff20a9946464fccb8535e989174cf23d19b4d6a6937eb2f270c1",
-    "susfs_guard_lkm-android16-6.12.ko": "5dda11001536338996271a1da87f5e989578cc09ac20ffec8ac6238f453abbc6",
-    "susfs_guard_lkm-android17-6.18.ko": "7c93e487f4c4674b821104f31a7eda0b87db037c51f63775021508a139ecd1e6",
+    "susfs_guard_lkm-android12-5.10.ko": "5c7954d2a21762705612df1800f120094b7292bb9dd6bac49463c9ab6d30bd92",
+    "susfs_guard_lkm-android13-5.10.ko": "e5563e8b66891da93a7d90aa8370a951ea767adc1fef62cbd0d9e5eabe785906",
+    "susfs_guard_lkm-android13-5.15.ko": "e4a6f83be42d9854c778225c44577a6210ce62b71a364919bacd1369bdbf272a",
+    "susfs_guard_lkm-android14-5.15.ko": "475108f31690c93552b4e8d56ed5f287095daaebc7efa4490b8d21374d1e3cec",
+    "susfs_guard_lkm-android14-6.1.ko": "510525f244bfc9ef9d661a33a06f36409719388000dfd4116070d6662cf2417c",
+    "susfs_guard_lkm-android15-6.6.ko": "84bfe5d4b9b8989a4413061c95d92aa157e4851df0492a70d2e458397dc55e90",
+    "susfs_guard_lkm-android16-6.12.ko": "49e06572a503d64d40ee562fd2929b21efeba65fd430a9cc2f9c30c09f9646c9",
+    "susfs_guard_lkm-android17-6.18.ko": "b2ba301ee7b385e21c24c1eb058987e3992191ec3c189afe398898802ace85c1",
     "susfs_insmod": "16a722d2158ff629e9e3d6d056e8333f15971410965ce5894216ed80dbfa44a4"
   },
-  "source_sha256": "4c1b15cb72073b984dec12ab5764c28ae12b2e894a9fc35817c6c42d7d9928d6"
+  "source_sha256": "99f9af6fd8cbee139f8453d7f1a2d198e017cdf5e91e1285c7023f479acf69e4"
 }
