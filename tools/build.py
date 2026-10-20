@@ -21,16 +21,24 @@ SLUG = LOCK["repository"].removeprefix("https://github.com/")
 URL = f"{LOCK['repository']}/releases/download/{LOCK['tag']}/"
 
 
+def fetch(url, path):
+    headers = {"User-Agent": "susfs-lkm-module-builder"}
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=120) as response:
+        path.write_bytes(response.read())
+
+
 def download(url, path, digest):
-    if not path.exists():
-        headers = {"User-Agent": "susfs-lkm-module-builder"}
-        token = os.environ.get("GITHUB_TOKEN")
-        if token:
-            headers["Authorization"] = f"Bearer {token}"
-        with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=120) as response:
-            path.write_bytes(response.read())
-    if hashlib.sha256(path.read_bytes()).hexdigest() != digest:
-        raise RuntimeError(f"SHA-256 mismatch: {path.name}")
+    # A leftover file from an earlier pin is stale cache, not a corrupt download: refetch once.
+    for _ in range(2):
+        if not path.exists():
+            fetch(url, path)
+        if hashlib.sha256(path.read_bytes()).hexdigest() == digest:
+            return
+        path.unlink()
+    raise RuntimeError(f"SHA-256 mismatch: {path.name}")
 
 
 def main():

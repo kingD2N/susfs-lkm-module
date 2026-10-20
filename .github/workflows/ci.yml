@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Byte-compile
-        run: python -m py_compile tools/build.py tools/sync.py tests/test_loader.py tests/test_probe.py
+        run: python -m py_compile tools/build.py tools/sync.py tests/test_loader.py tests/test_probe.py tests/test_build.py
       - name: Host tests
         run: python -m unittest discover -s tests -v
 
