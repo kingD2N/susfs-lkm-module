@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/inforcqb/susfs4ksu-lkm",
   "tag": "v2.3.0-r18.5",
-  "commit": "0de81248b654f6eff805dda59e561928a34af79a",
+  "commit": "55ca6cc99022336ceb2c54a021a0c2616fe42b8a",
   "architecture": "arm64",
   "supported_kmis": [
     "android12-5.10",
@@ -22,7 +22,7 @@
     "susfs_guard_lkm-android15-6.6.ko": "7c2a274798fc6afd32e74d20321065612d8d656185fa91764dadcdd29f25f372",
     "susfs_guard_lkm-android16-6.12.ko": "1f50330ad2597a527ea200dd7f2a5aa21c1b3eb5a845e176b9efbc3322266214",
     "susfs_guard_lkm-android17-6.18.ko": "548c982267f8ee160207af9d62bfe2b8c16dd2eea54d97362dea49c595a7d462",
-    "susfs_insmod": "16a722d2158ff629e9e3d6d056e8333f15971410965ce5894216ed80dbfa44a4"
+    "susfs_insmod": "0dbd44178aee66128ffdd33e30c91bc0ffdce01397def8f993aa6075d4adc316"
   },
-  "source_sha256": "8274ac64452944bc53d2e9a1539e31a9b240cb704b407d561b980c3a95fecc43"
+  "source_sha256": "1bef422186c176d3a2063c0feacdc80cd3f5fdfebc07f7330ce58e03d33bcbb3"
 }
